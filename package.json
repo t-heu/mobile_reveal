@@ -1,6 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "commit": "cz",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -53,9 +54,15 @@
     "@types/yup": "^0.29.8",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.6.0",
     "prettier": "^2.0.5",
     "typescript": "~3.9.2"
   },
-  "private": true
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
