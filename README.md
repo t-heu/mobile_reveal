@@ -1,7 +1,7 @@
 ## Reveal
 
 <p align="center">
-  <img alt="logo" src="./mobile/assets/icon.png" width="150" />
+  <img alt="logo" src="./assets/icon.png" width="150" />
 </p>
 
 [![Twitter Badge](https://img.shields.io/badge/-@t__h__e__u-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/t_h_e_u)](https://twitter.com/t_h_e_u) 
