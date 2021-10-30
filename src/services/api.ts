@@ -1,5 +1,6 @@
 import axios from 'axios'; // AxiosResponse, //AxiosRequestConfig,
 import AsyncStorage from '@react-native-community/async-storage';
+import {DevSettings} from 'react-native';
 
 import Env from '../../environment';
 
@@ -35,6 +36,9 @@ async function refreshToken(): Promise<any> {
         '@auth:refreshToken',
         '@auth:user',
       ]);
+
+      DevSettings.reload();
+
       return Promise.reject();
     });
 }

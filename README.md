@@ -1,5 +1,3 @@
-## Reveal
-
 <p align="center">
   <img alt="logo" src="./assets/icon.png" width="150" />
 </p>
@@ -8,43 +6,26 @@
 [![Linkedin Badge](https://img.shields.io/badge/-matheusgbatista-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheusgbatista-3392bb153/)](https://www.linkedin.com/in/matheusgbatista/) 
 [![MyWeb Badge](https://img.shields.io/badge/-t--heu.github.io-333?style=flat-square&link=https://t-heu.github.io/)](https://t-heu.github.io) 
 
-
-### About
-Reveal is a type of social network where users are anonymous, they can share ideas, secrets and what they are thinking at that very moment.
-
-###  Technologies used
-- TypeScript
-- Postgress
-- Redis
-- Express
-- React Native
-- MongoDB
-- EJS
-- Firebase
-
-<ul>
-  <li>others:</li>
-  <ul>
-    <li>cacheable</li>
-    <li>authenticate + refresh token</li>
-    <li>rate limiter</li>
-    <li>multiple logins (local, social)</li>
-    <li>deep linking</li>
-    <li>scroll infinite</li>
-    <li>ACL</li>
-  </ul>
-</ul>
-
-<h4>📸 Prototype</h4>
+## 📸 Screenshot/Prototype
 <p align="center">
   <img alt="schema_design" src="./docs/reveal.png" width="750" />
 </p>
 
-## Versioning
-This project does not have a versioning system.
+### About
+Reveal is a type of social network where users are anonymous, they can share ideas, secrets and what they are thinking at that very moment.
 
-## History
-Take a look at the tab [Releases](https://github.com/t-heu/reveal/releases) to track changes made to the project.
+##  Technologies used
+- TypeScript
+- React Native
+- Expo
+
+## Functionalities
+<ul>
+  <li>authenticate + refresh token</li>
+  <li>multiple logins (local, social)</li>
+  <li>deep linking</li>
+  <li>scroll infinite</li>
+</ul>
 
 ## License
 [MIT License](./LICENSE) © [Math](https://github.com/t-heu/)
