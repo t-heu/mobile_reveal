@@ -3,6 +3,7 @@
     "name": "Reveal",
     "slug": "Reveal",
     "version": "1.0.6",
+    "sdkVersion": "43.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "primaryColor": "#27ae60",

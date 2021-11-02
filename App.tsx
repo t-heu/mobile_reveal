@@ -1,3 +1,4 @@
+// import {DSN_SENTRY_URI} from '@env';
 import {StatusBar} from 'expo-status-bar';
 import React from 'react';
 import {
@@ -10,29 +11,29 @@ import {
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import Toast from 'react-native-toast-message';
-import * as Sentry from 'sentry-expo';
+//import * as Sentry from 'sentry-expo';
 import {useFonts} from 'expo-font';
 import * as Notifications from 'expo-notifications';
 
-import Env from './environment';
 import Routes from './src/routes';
 import AppProvider from './src/hooks';
 import ErrorBoundary from './src/ErrorBoundary';
 import ErrorWithoutInternet from './src/ErrorWithoutInternet';
 import ModalBottomSheetPost from './src/components/ModalBottomSheetPost';
-
+/*
 Sentry.init({
-  dsn: Env.DSN_SENTRY_URI,
+  dsn: process.env.DSN_SENTRY_URI,
   enableInExpoDevelopment: true,
   debug: true,
-});
+});*/
 
+// 'http://192.168.1.5:3333',
 const linking = {
   prefixes: [
     'exp://192.168.1.5:19000/--/',
     'exp://',
     'reveal://',
-    'https://servebacksecretapp.herokuapp.com/',
+    'https://apireveal.herokuapp.com/',
   ],
   config: {
     screens: {

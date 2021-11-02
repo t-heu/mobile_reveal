@@ -3,8 +3,8 @@ import {View, TouchableOpacity, Image, Text} from 'react-native';
 import {Feather} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 import io from 'socket.io-client';
+import {API_URI} from '@env';
 
-import Env from '../../../environment';
 import {styles, colors} from './styles';
 import {useAuth} from '../../hooks/auth';
 import {useShareStateComponent} from '../../hooks/shareStateComponent';
@@ -24,7 +24,7 @@ export default function Header({back}: Props) {
   const navigation = useNavigation();
 
   useEffect(() => {
-    const socket = io(`${Env.API_URI}`, {
+    const socket = io(`${API_URI}`, {
       query: {
         user: user.id,
       },

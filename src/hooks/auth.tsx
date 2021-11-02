@@ -5,7 +5,7 @@ import React, {
   useContext,
   useEffect,
 } from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Location from 'expo-localization';
 
 import {registerForPushNotificationsAsync} from '../utils/getTokenNotification';

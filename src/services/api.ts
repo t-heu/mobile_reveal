@@ -1,14 +1,13 @@
 import axios from 'axios'; // AxiosResponse, //AxiosRequestConfig,
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {DevSettings} from 'react-native';
-
-import Env from '../../environment';
+import {API_URI} from '@env';
 
 let isRefreshing = false;
 let refreshSubscribers = [] as any;
 
 const api = axios.create({
-  baseURL: `${Env.API_URI}/api/v1`,
+  baseURL: `${API_URI}/api/v1`,
 });
 
 async function refreshToken(): Promise<any> {

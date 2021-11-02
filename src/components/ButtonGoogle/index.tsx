@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text, TouchableOpacity, StyleSheet, View, Image} from 'react-native';
 import * as Google from 'expo-google-app-auth';
+import {GOOGLE_ID} from '@env';
 
 import {ToastErrors} from '../../utils/tryToasts';
 import LogoGoogle from '../../assets/google-icon-4.png';
 import {useAuth} from '../../hooks/auth';
-import Env from '../../../environment';
 
 export default function ButtonGoogle() {
   const {loginWithGoogle} = useAuth();
@@ -14,7 +14,7 @@ export default function ButtonGoogle() {
     try {
       //@ts-ignore
       const {type, accessToken} = await Google.logInAsync({
-        androidClientId: Env?.GOOGLE_ID,
+        androidClientId: GOOGLE_ID,
         scopes: ['profile', 'email'],
       });
 
