@@ -8,7 +8,7 @@
 
 ## 📷 Screenshot/Prototype
 <p align="center">
-  <img alt="schema_design" src="./docs/reveal.png" width="750" />
+  <img alt="schema_design" src="./docs/preview.png" width="750" />
 </p>
 
 ## 📄 About
